@@ -16,8 +16,11 @@ export class PopUpService {
 
   makeDenuesPopup(data: any): string {
     return `` +
-      `<div>Capital: ${ data.nombre }</div>` +
-      `<div>State: ${ data.calle }</div>` +
-      `<div>Population: ${ data.municipio }</div>`
-  }
+      `<div>Nombre: ${ data.nombre }</div>` +
+      `<div>Direccion: ${ data.calle } ${ data.numero }, ${ data.colonia } ${ data.cp }</div>` +
+      `<div>Municipio: ${ data.municipio }</div>` +
+      `<div>Estado: ${ data.estado }</div>` + 
+      `<div>GPS: ${ data.lat }, ${ data.lng } </div>`
+
+    }
 }
